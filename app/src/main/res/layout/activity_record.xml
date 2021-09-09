@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Record">
+
+    <Switch
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:text="Image / Text  "
+        android:textColor="#686868"
+        android:thumbTint="#63B4F4"
+        android:trackTint="#C5C5C5"
+        android:layout_marginRight="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Widget.MaterialComponents.Snackbar.TextView"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ScrollView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#686868"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#BDBDBD" />
+
+    <Chronometer
+        android:id="@+id/ch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:visibility="invisible"
+        android:textSize="25dp"
+        android:textColor="#7C7C7C"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingBottom="30dp">
+
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:src="@drawable/record" />
+
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:src="@drawable/stop"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:background="@drawable/eyes" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:clickable="false"
+            android:background="@drawable/next" />
+
+        <ImageButton
+            android:id="@+id/pre"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="false"
+            android:background="@drawable/before" />
+    </FrameLayout>
+
+
+</LinearLayout>
